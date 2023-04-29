@@ -19,9 +19,20 @@ int largest_proper_divisor(int n) {
 }
 
 void process_input(int n) {
+    try
+    {
+        int d = largest_proper_divisor(n);
+        cout << "result=" << d << endl;
+    }
+    catch(const std::invalid_argument& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
+    catch(const std::invalid_argument& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
     
-    int d = largest_proper_divisor(n);
-    cout << "result=" << d << endl;
     
 }
 
