@@ -24,16 +24,13 @@ void process_input(int n) {
         int d = largest_proper_divisor(n);
         cout << "result=" << d << endl;
     }
-    catch(const std::invalid_argument& e)
+    catch(const invalid_argument& e)
     {
-        std::cerr << e.what() << '\n';
+        cout << e.what() << '\n';
     }
-    catch(const std::invalid_argument& e)
-    {
-        std::cerr << e.what() << '\n';
-    }
-    
-    
+    cout << "returning control flow to caller" << '\n';
+
+
 }
 
 
